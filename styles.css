@@ -5,39 +5,36 @@ body, h1, h2, p, ul {
 }
 
 /* Basic styling */
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    height: 100vh; /* Set the height to 100% of the viewport */
-    display: flex;
-    justify-content: center; /* Horizontally centers content */
-    align-items: center; /* Vertically centers content */
-    margin: 0;
 }
 
-/* Header styling */
+/* Header styles */
 header {
     background-color: #4CAF50;
     color: white;
     padding: 20px;
     text-align: center;
+    position: relative;
     width: 100%;
 }
 
-/* Main container for content */
+/* Center main content */
 main {
     max-width: 800px;
-    width: 100%; /* Ensures content fills width but remains responsive */
+    margin: 20px auto;
     padding: 20px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    text-align: center;  /* Center the content including the image */
 }
 
-/* Styling for individual articles */
+/* Article content styles */
 article {
     background-color: white;
     padding: 20px;
@@ -62,18 +59,18 @@ article p {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 20px 0;
+    margin: 20px auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Footer styling */
+/* Footer styles */
 footer {
     background-color: #4CAF50;
     color: white;
     text-align: center;
     padding: 10px;
     width: 100%;
-    margin-top: 20px;
     position: relative;
+    bottom: 0;
 }
