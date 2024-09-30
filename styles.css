@@ -1,56 +1,40 @@
-/* General Styles */
+/* Center content horizontally and vertically */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    min-height: 100vh; /* Makes sure the body takes the full viewport height */
+    font-family: Arial, sans-serif; /* Optional: Set a default font */
+    background-color: #f4f4f4; /* Optional: A light background color */
+    text-align: center; /* Centers the text */
 }
 
+/* Styling for header */
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    margin-bottom: 20px;
 }
 
+/* Styling for main content */
 main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
 }
 
-article h2 {
-    color: #333;
-    border-bottom: 2px solid #4CAF50;
-    padding-bottom: 10px;
-}
-
-article p {
-    margin: 15px 0;
-    font-size: 18px;
-}
-
-/* Style for the image */
-.post-image {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
+/* Styling for the footer */
 footer {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
     margin-top: 20px;
+    color: #555;
+}
+
+img.post-image {
+    margin: 20px 0;
+}
+
+/* Optional: Set max width for the content */
+article {
+    max-width: 600px;
 }
